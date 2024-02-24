@@ -1,0 +1,15 @@
+data/config.py
+
+.venv/
+anon.session
+telegram_bot/__pycache__/
+handlers/__pycache__/
+db/__pycache__/
+data/__pycache__/
+
+Fusionist.session.sql
+db/
+fusionist_qp.db
+fusionist_bm.db
+
+.vscode/settings.json
