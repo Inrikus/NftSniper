@@ -120,24 +120,25 @@ async def bm_qp_binance_request(weapon_grade_data, headers, payload) :
         print(f"GLOBAL ERROR: {e}")
         sys.exit(1)
 
-
+#
 #async def get_binance_bnb_price():
-    url = "https://api.binance.com/api/v3/ticker/price"
-    params = {"symbol": "BNBUSDT"}  # Символ BNB к USDT
-
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url, params=params) as response:
-                data = await response.json()
-
-                if "price" in data:
-                    bnb_price = data["price"]
-                    print(f"Текущая цена BNB: {bnb_price} USDT\n")
-                    return bnb_price
-                else:
-                    print("Не удалось получить цену BNB.")
-                    return None
-    
-    except aiohttp.ClientConnectionError as connection_error:
-        print(f"VPN ERROR: {connection_error}")
-        return 300
+#    url = "https://api.binance.com/api/v3/ticker/price"
+#    params = {"symbol": "BNBUSDT"}  # Символ BNB к USDT
+#
+#    try:
+#        async with aiohttp.ClientSession() as session:
+#            async with session.get(url, params=params) as response:
+#                data = await response.json()
+#
+#                if "price" in data:
+#                    bnb_price = data["price"]
+#                    print(f"Текущая цена BNB: {bnb_price} USDT\n")
+#                    return bnb_price
+#                else:
+#                    print("Не удалось получить цену BNB.")
+#                    return None
+#    
+#    except aiohttp.ClientConnectionError as connection_error:
+#        print(f"VPN ERROR: {connection_error}")
+#        return 300
+#
