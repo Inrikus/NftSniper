@@ -1,0 +1,4 @@
+API_ID = 0
+API_HASH = ''
+CHAT_ID = 0
+BOT_TOKEN = ''
